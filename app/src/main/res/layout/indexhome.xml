@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#56789A"
+    android:layout_height="match_parent"
+    android:id="@+id/rlb1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/lly">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mt12">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:title="Menu"
+                app:titleTextAppearance="@style/TextAppearance.AppCompat.Display2"
+                app:titleTextColor="@color/white" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lly"
+        android:padding="10dp"
+        android:id="@+id/tbl1">
+
+        <ImageView
+            android:id="@+id/imgview1"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="2"
+            android:background="#E60909"
+            android:onClick="clickRumahSakit"
+            app:srcCompat="@drawable/rumahsakit" />
+
+        <ImageView
+            android:id="@+id/imgview2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2"
+            android:background="#050505"
+            app:srcCompat="@drawable/kantor_polisi" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_marginTop="1dp"
+        android:padding="10dp"
+        android:layout_below="@+id/tbl1"
+        android:layout_height="280dp"
+        android:id="@+id/tbl2">
+
+        <ImageView
+            android:id="@+id/imgview3"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="2"
+            android:background="#0E0D0D"
+            app:srcCompat="@drawable/school" />
+
+        <ImageView
+            android:id="@+id/imgview4"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2"
+            android:background="#E60909"
+            app:srcCompat="@drawable/pasar" />
+
+    </TableRow>
+
+    <TextView
+        android:id="@+id/idtview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbl2"
+        android:gravity="center"
+        android:text="@string/created_by_m_junaidi_zidane" />
+
+</RelativeLayout>
